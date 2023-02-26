@@ -36,12 +36,14 @@ const Article: React.FC = () => {
 
   const handleUpdateVoteList: any = (updateList: any) => {
     cookies.set('voted', updateList, { path: '/' })
-    const nextJoke = Object.values(jokesCookie).find((j: any) => j.voted === null) as TJoke
+    const indexCurrentJoke = Object.values(jokesCookie).findIndex((j: any) => j.id === id)
+    const indexNextJoke = indexCurrentJoke + 1
 
     let url = ''
-    if (nextJoke === undefined) {
+    if (indexNextJoke >= Object.values(jokesCookie).length) {
       url = '/end'
     } else {
+      const nextJoke = Object.values(jokesCookie)[indexNextJoke] as TJoke
       url = `/joke/${nextJoke.id}`
     }
 
