@@ -8,6 +8,10 @@ All data of you will be store in cookies without being collected by us.
 
 ![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-1.png?raw=true "Joke App")
 
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-2.png?raw=true "Joke App")
+
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-3.png?raw=true "Joke App")
+
 ## Available Scripts
 
 In the project directory, you can run:
