@@ -31,6 +31,7 @@ const Vote: React.FC<TVote> = ({ voteId, voteList, onUpdateVoteList }) => {
   return (
     <React.Fragment>
       <Stack
+        data-testid="vote-ele"
         direction="row"
         alignItems="center"
         alignSelf="center"
