@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/shared/Layout'
+import Home from './pages/Home'
+import Article from './pages/Article'
+import PageNotFound from './pages/404'
+import NoMore from './pages/NoMore'
+import React from 'react'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <React.Fragment>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/joke/:id" element={<Article />} />
+          <Route path="/end" element={<NoMore />} />
+          <Route path="/404" element={<PageNotFound />} />
+        </Route>
+      </Routes>
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default App
