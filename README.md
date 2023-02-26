@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Jokes app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App will show you some jokes, that I believe in it make you laughing. An if not, let's tickle yourself (Joking!)
+Voting them by like it you like it, and of course, dislike it by thumbdown. But you can also like if you don't like (Joking!)
+After you will be get new other jokes. If we have no more joke, app will inform to you with a message.
+All data of you will be store in cookies without being collected by us.
+
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-1.png?raw=true "Joke App")
 
 ## Available Scripts
 
