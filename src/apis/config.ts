@@ -8,7 +8,7 @@ interface TAxiosApi {
   params?: any
 }
 
-const apiUrl = process.env.NODE_API_PROD ?? 'https://zens-assigment.herokuapp.com/api'
+const apiUrl = process.env.NODE_API_PROD ?? 'https://zens-assignment.herokuapp.com/api'
 
 export const axiosApi = ({ headers, method, transformRequest, params }: TAxiosApi): AxiosInstance =>
   axios.create({
