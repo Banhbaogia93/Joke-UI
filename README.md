@@ -9,9 +9,9 @@ All data of you will be store in cookies without being collected by us.
 https://zens-assignment-ui.herokuapp.com/
 
 
-![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-Home.png?raw=true "Joke App")
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-home.png?raw=true "Joke App")
 
-![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-Joke.png?raw=true "Joke App")
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-joke.png?raw=true "Joke App")
 
 ![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-end.png?raw=true "Joke App")
 
