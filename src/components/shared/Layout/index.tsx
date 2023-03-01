@@ -16,13 +16,13 @@ const Layout: React.FC = () => {
           alignItems="center"
           spacing={0}
         >
-          <Box height="10vh">
+          <Box width="100%" height="10vh">
             <Header />
           </Box>
           <Box width="100%" height="20vh" bgcolor="#cfe8fc">
             <PageTitle />
           </Box>
-          <Box minHeight="50vh" display="flex">
+          <Box width="100%" minHeight="50vh" display="flex">
             <Outlet />
           </Box>
           <Box width="100%" height="20vh">

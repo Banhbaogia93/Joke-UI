@@ -75,8 +75,8 @@ const Article: React.FC = () => {
             <Content {...article} />
             <Vote voteId={article.id} voteList={jokesCookie} onUpdateVoteList={handleUpdateVoteList} />
             <Box sx={{ textAlign: 'center' }}>
-              <Button variant="outlined" onClick={() => { navigate('/') }}>
-                  Back Home
+              <Button onClick={() => { navigate('/') }}>
+                Back Home
               </Button>
             </Box>
           </React.Fragment>

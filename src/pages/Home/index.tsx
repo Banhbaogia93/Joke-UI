@@ -47,10 +47,19 @@ const Home: React.FC = () => {
         justifyContent="center"
         alignItems="center"
         spacing={2}
+        width="100%"
       >
-        <Typography variant="h4" textAlign="center"><strong>Welcome to Jokes for everyday!</strong></Typography>
-        <Typography variant="h5" textAlign="center">Let&apos;s start a new day with laughing now</Typography>
-        <Button variant="contained" size="medium" onClick={handleOnClick}>
+        <Typography variant="h4"><strong>Welcome to Jokes for everyday!</strong></Typography>
+        <Typography variant="h5">Let&apos;s start a new day with laughing now</Typography>
+        <Button
+          variant="contained"
+          size="medium"
+          onClick={handleOnClick}
+          sx={{
+            backgroundColor: '#2c7edb',
+            borderRadius: 0
+          }}
+        >
           Go ahead
         </Button>
       </Stack>
