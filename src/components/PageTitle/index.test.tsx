@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Quotes from './';
+import PageTitle from '.';
 
 test('renders learn react link', () => {
-  render(<Quotes />);
-  const text = screen.getByText(/Peace begins with a smile/i);
+  render(<PageTitle />);
+  const text = screen.getByText(/A joke a day keeps the doctor away/i);
   expect(text).toBeInTheDocument();
 });

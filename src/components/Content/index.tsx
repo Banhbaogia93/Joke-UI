@@ -8,10 +8,9 @@ const Content: React.FC<TJoke> = ({ content }: TJoke) => {
       <Box
         maxWidth="sm"
         padding={5}
-        sx={{
-          display: 'flex',
-          alignSelf: 'center'
-        }}
+        fontFamily="Roboto"
+        display="flex"
+        alignSelf="center"
       >
         <Paper
           elevation={3}

@@ -15,7 +15,6 @@ const NoMore: React.FC = () => {
         justifyContent="center"
         alignItems="center"
         spacing={2}
-        height="100%"
       >
         <Typography>
           That&apos;s all the jokes for today! Come back another day!

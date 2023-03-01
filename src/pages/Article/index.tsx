@@ -64,22 +64,23 @@ const Article: React.FC = () => {
         alignContent="center"
         width="100%"
         marginTop={2}
-        spacing={4}
+        marginBottom={2}
+        spacing={3}
       >
         <Box sx={{ textAlign: 'center' }}>
-          <CircularProgress variant={loading ? 'indeterminate' : 'determinate'} />
+          <CircularProgress size={20} variant={loading ? 'indeterminate' : 'determinate'} />
         </Box>
         {article !== undefined && (
           <React.Fragment>
             <Content {...article} />
             <Vote voteId={article.id} voteList={jokesCookie} onUpdateVoteList={handleUpdateVoteList} />
+            <Box sx={{ textAlign: 'center' }}>
+              <Button variant="outlined" onClick={() => { navigate('/') }}>
+                  Back Home
+              </Button>
+            </Box>
           </React.Fragment>
         )}
-        <Box sx={{ textAlign: 'center' }}>
-          <Button variant="outlined" onClick={() => { navigate('/') }}>
-              Back Home
-          </Button>
-        </Box>
       </Stack>
     </React.Fragment>
   )
