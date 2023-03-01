@@ -1,8 +1,5 @@
-import IconButton from '@mui/material/IconButton'
-import ThumbUpIcon from '@mui/icons-material/ThumbUp'
-import ThumbDownIcon from '@mui/icons-material/ThumbDown'
 import Stack from '@mui/material/Stack'
-import { Typography } from '@mui/material'
+import { Button, Divider, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 
 interface TVote {
@@ -30,6 +27,7 @@ const Vote: React.FC<TVote> = ({ voteId, voteList, onUpdateVoteList }) => {
 
   return (
     <React.Fragment>
+      <Divider variant="middle" />
       <Stack
         data-testid="vote-ele"
         direction="row"
@@ -48,22 +46,32 @@ const Vote: React.FC<TVote> = ({ voteId, voteList, onUpdateVoteList }) => {
         alignSelf="center"
         spacing={2}
       >
-        <IconButton
-          color="success"
+        <Button
           aria-label="thumbup"
+          variant="contained"
+          size="large"
+          sx={{
+            width: 190,
+            backgroundColor: '#2c7edb'
+          }}
           onClick={() => { handleOnVote(true) }}
           disabled={voted !== null}
         >
-          <ThumbUpIcon />
-        </IconButton>
-        <IconButton
-          color="error"
+          This is Funny!
+        </Button>
+        <Button
           aria-label="thumbdown"
+          variant="contained"
+          size="large"
+          sx={{
+            width: 190,
+            backgroundColor: '#26a85d'
+          }}
           onClick={() => { handleOnVote(false) }}
           disabled={voted !== null}
         >
-          <ThumbDownIcon />
-        </IconButton>
+          This is not funny.
+        </Button>
       </Stack>
     </React.Fragment>
   )
