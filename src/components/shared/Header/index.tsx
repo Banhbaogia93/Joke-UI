@@ -1,5 +1,6 @@
 import { Avatar, Box, Stack, Typography } from '@mui/material'
 import logo from './logo.png'
+import avatar from './avatar.png'
 import React from 'react'
 
 const Header: React.FC = () => {
@@ -24,7 +25,16 @@ const Header: React.FC = () => {
             <Typography fontSize={14} color="gray"><i>Handicrafted by</i></Typography>
             <Typography fontSize={14}><strong>Jim HLS</strong></Typography>
           </Box>
-          <Avatar sx={{ bgcolor: '26a85d' }}>BV</Avatar>
+          <Avatar
+            src={avatar}
+            sx={{
+              bgcolor: '26a85d',
+              width: 60,
+              height: 60
+            }}
+          >
+            BV
+          </Avatar>
         </Stack>
       </Stack>
     </React.Fragment>
