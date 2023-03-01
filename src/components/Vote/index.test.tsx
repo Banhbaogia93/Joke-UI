@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Vote from './';
 
-test('renders learn react link', () => {
+test('renders vote component', () => {
   render(
     <Vote
       voteId="JK01"

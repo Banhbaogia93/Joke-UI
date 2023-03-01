@@ -1,12 +1,10 @@
 import * as React from 'react'
 import { Outlet } from 'react-router-dom'
 import CssBaseline from '@mui/material/CssBaseline'
-import Box from '@mui/material/Box'
-import Container from '@mui/material/Container'
+import { Box, Container, Stack } from '@mui/material'
 import Header from '../Header'
 import PageTitle from '../../PageTitle'
 import Footer from '../Footer'
-import { Stack } from '@mui/material'
 
 const Layout: React.FC = () => {
   return (
