@@ -1,5 +1,5 @@
 import Stack from '@mui/material/Stack'
-import { Button, Divider, Typography } from '@mui/material'
+import { Box, Button, Divider, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 
 interface TVote {
@@ -27,7 +27,12 @@ const Vote: React.FC<TVote> = ({ voteId, voteList, onUpdateVoteList }) => {
 
   return (
     <React.Fragment>
-      <Divider variant="middle" />
+      <Box
+        width={['60%', '40%']}
+        alignSelf="center"
+      >
+        <Divider variant="middle" light />
+      </Box>
       <Stack
         data-testid="vote-ele"
         direction="row"
@@ -52,7 +57,9 @@ const Vote: React.FC<TVote> = ({ voteId, voteList, onUpdateVoteList }) => {
           size="large"
           sx={{
             width: 190,
-            backgroundColor: '#2c7edb'
+            backgroundColor: '#2c7edb',
+            borderRadius: 0,
+            textTransform: 'none'
           }}
           onClick={() => { handleOnVote(true) }}
           disabled={voted !== null}
@@ -65,7 +72,9 @@ const Vote: React.FC<TVote> = ({ voteId, voteList, onUpdateVoteList }) => {
           size="large"
           sx={{
             width: 190,
-            backgroundColor: '#26a85d'
+            backgroundColor: '#26a85d',
+            borderRadius: 0,
+            textTransform: 'none'
           }}
           onClick={() => { handleOnVote(false) }}
           disabled={voted !== null}

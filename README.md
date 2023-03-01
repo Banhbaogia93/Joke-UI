@@ -9,11 +9,11 @@ All data of you will be store in cookies without being collected by us.
 https://zens-assignment-ui.herokuapp.com/
 
 
-![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-2.png?raw=true "Joke App")
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-Home.png?raw=true "Joke App")
 
-![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-1.png?raw=true "Joke App")
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-Joke.png?raw=true "Joke App")
 
-![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-3.png?raw=true "Joke App")
+![Alt text](https://github.com/Banhbaogia93/Joke-UI/blob/main/public/UI-end.png?raw=true "Joke App")
 
 ## Available Scripts
 
