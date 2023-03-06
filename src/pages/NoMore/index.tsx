@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { useNavigate } from 'react-router-dom'
 import { Stack, Typography } from '@mui/material'
 
 const NoMore: React.FC = () => {
