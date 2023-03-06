@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import { Stack, Typography } from '@mui/material'
 
 const NoMore: React.FC = () => {
-  const navigate = useNavigate()
-
   return (
     <React.Fragment>
       <Helmet>
