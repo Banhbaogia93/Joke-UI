@@ -1,8 +1,22 @@
 import React from 'react'
+import Cookies from 'universal-cookie/es6'
 import { Helmet } from 'react-helmet'
 import { Stack, Typography } from '@mui/material'
+import { useNavigate } from 'react-router'
+
+const cookies = new Cookies()
 
 const NoMore: React.FC = () => {
+  const navigate = useNavigate()
+
+  const jokesCookie = cookies.get('voted')
+
+  React.useEffect(() => {
+    if (jokesCookie === undefined) {
+      navigate('/', { replace: true })
+    }
+  }, [])
+
   return (
     <React.Fragment>
       <Helmet>
