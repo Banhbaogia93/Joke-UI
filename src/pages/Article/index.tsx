@@ -6,7 +6,7 @@ import Cookies from 'universal-cookie/es6'
 import Content from '../../components/Content'
 import Vote from '../../components/Vote'
 
-import { Box, Button, CircularProgress, Stack } from '@mui/material'
+import { Box, CircularProgress, Stack } from '@mui/material'
 
 import { getJoke } from '../../apis/joke'
 import type { TJoke } from '../../types'
@@ -74,11 +74,6 @@ const Article: React.FC = () => {
           <React.Fragment>
             <Content {...article} />
             <Vote voteId={article.id} voteList={jokesCookie} onUpdateVoteList={handleUpdateVoteList} />
-            <Box sx={{ textAlign: 'center' }}>
-              <Button onClick={() => { navigate('/') }}>
-                Back Home
-              </Button>
-            </Box>
           </React.Fragment>
         )}
       </Stack>
