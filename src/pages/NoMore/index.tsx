@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useNavigate } from 'react-router-dom'
-import { Button, Stack, Typography } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 
 const NoMore: React.FC = () => {
   const navigate = useNavigate()
@@ -20,9 +20,6 @@ const NoMore: React.FC = () => {
         <Typography>
           That&apos;s all the jokes for today! Come back another day!
         </Typography>
-        <Button onClick={() => { navigate('/') }}>
-          Back Home
-        </Button>
       </Stack>
     </React.Fragment>
   )
